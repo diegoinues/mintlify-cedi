@@ -1,0 +1,55 @@
+---
+title: Verificación de identidad
+---
+
+El usuario accede a la pantalla **"Verificación de identidad"** y selecciona la opción **"Iniciar verificación"** para comenzar el proceso.
+
+![Pantalla de verificación de identidad — inicio](/images/cedi-verificacion-identidad-1.png)
+
+El sistema muestra un código QR que el usuario debe escanear con su dispositivo móvil. Una vez escaneado, el usuario accede al enlace proporcionado en su celular y selecciona **"Continuar"** para avanzar.
+
+![Código QR y continuar en el móvil](/images/cedi-verificacion-identidad-2.png)
+
+A continuación, el sistema presenta un formulario donde el usuario debe seleccionar el tipo de documento que utilizará para verificar su identidad, eligiendo entre **INE (credencial para votar)** o **pasaporte**, así como el país de emisión del documento.
+
+<div className="not-prose grid grid-cols-1 gap-4 sm:grid-cols-2">
+  <img
+    src="/images/cedi-verificacion-identidad-3.png"
+    alt="Formulario: tipo de documento y país"
+    className="w-full rounded-lg border border-zinc-200 dark:border-zinc-700"
+  />
+  <img
+    src="/images/cedi-verificacion-identidad-4.png"
+    alt="Captura del frente del documento"
+    className="w-full rounded-lg border border-zinc-200 dark:border-zinc-700"
+  />
+</div>
+
+Posteriormente, el usuario selecciona **"Hacer foto del lado frontal"**, lo que activa la cámara del dispositivo. El usuario debe capturar la imagen del frente de su identificación, asegurándose de colocarla dentro del marco indicado.
+
+El sistema analiza la imagen capturada para validar su legibilidad y autenticidad. Si el documento es válido, se permite continuar con el escaneo de la parte trasera; en caso contrario, se solicita repetir la captura.
+
+Una vez validado el frente, el usuario selecciona **"Hacer foto del lado trasero"**. El sistema vuelve a activar la cámara para capturar la parte posterior del documento. De igual manera, se evalúa la calidad y validez de la imagen. Si la validación es exitosa, el usuario puede continuar; si no, se le pide repetir el proceso.
+
+Después, el usuario accede a la pantalla **"Prepárate para la cámara"**, donde el sistema muestra una serie de recomendaciones para asegurar una correcta captura del rostro, como sonreír, ubicarse en un lugar con buena iluminación y retirar cualquier objeto que cubra la cara, incluidos lentes.
+
+Una vez listo, el usuario selecciona **"Continuar"** y la cámara se activa nuevamente. El usuario debe posicionar su rostro dentro del marco indicado para realizar la captura.
+
+<div className="not-prose grid grid-cols-1 gap-4 sm:grid-cols-2">
+  <img
+    src="/images/cedi-verificacion-identidad-5.png"
+    alt="Captura del reverso del documento"
+    className="w-full rounded-lg border border-zinc-200 dark:border-zinc-700"
+  />
+  <img
+    src="/images/cedi-verificacion-identidad-6.png"
+    alt="Captura facial o confirmación"
+    className="w-full rounded-lg border border-zinc-200 dark:border-zinc-700"
+  />
+</div>
+
+El sistema analiza la imagen del rostro para validar que sea clara y adecuada. Si la imagen cumple con los criterios, el proceso continúa; de lo contrario, se solicita repetir la captura.
+
+Finalmente, el sistema notifica al usuario que su solicitud ha sido enviada a revisión y que será informado posteriormente sobre su aprobación o rechazo.
+
+---

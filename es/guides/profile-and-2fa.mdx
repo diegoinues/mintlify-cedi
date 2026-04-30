@@ -1,0 +1,101 @@
+---
+title: Perfil de usuarios y código 2FA
+---
+
+## Perfil de usuario
+
+El usuario accede a la pantalla **"Perfil de usuario"** desde el menú lateral, donde el sistema muestra la información general asociada a su cuenta.
+
+En la sección **"Perfil"**, el sistema presenta los datos principales del usuario, como su correo electrónico, nombre completo y el equipo asignado. Desde este apartado, el usuario puede visualizar su información personal y administrarla seleccionando la opción **"Cambiar / Administrar"**, lo que le permite gestionar y actualizar los equipos asignados según sea necesario.
+
+---
+
+En el apartado de **Configuración de Seguridad**, el sistema muestra la opción de **Autenticación de Dos Factores (2FA)**. Al seleccionar **"Configurar 2FA"**, el usuario es redirigido al flujo de configuración de autenticación en dos pasos, el cual se describe en las siguientes secciones.
+
+---
+
+El sistema también presenta la sección **Información de la Empresa**, donde se despliegan los datos previamente registrados, incluyendo el nombre de la empresa, RFC, dirección completa, teléfono de contacto, categoría y objeto social. El usuario puede consultar esta información en cualquier momento y desplazarse hacia abajo para visualizar la totalidad de los datos disponibles.
+
+![title](/images/cedi-informacion-usuarios.png)
+
+El usuario puede regresar a cualquier módulo del sistema seleccionando una opción del menú lateral izquierdo.
+
+---
+
+## Configuración y activación del código 2FA
+
+Para activar la autenticación en dos factores, el sistema muestra una ventana informativa indicando que es necesario instalar una aplicación autenticadora, como **Google Authenticator** o **Microsoft Authenticator**. Para efectos de este flujo, se utilizará **Google Authenticator** como referencia.
+
+En la computadora, el sistema presenta los elementos necesarios para completar la configuración:
+
+- Código QR
+- Clave de configuración
+- Campo para ingresar un código temporal
+
+El código temporal se obtendrá al finalizar los pasos siguientes.
+
+El usuario debe ingresar a la **App Store** o **Play Store**, dependiendo del sistema operativo de su dispositivo móvil (iOS o Android), buscar la aplicación **Google Authenticator**, instalarla y abrirla.
+
+<div className="not-prose grid grid-cols-1 gap-4 sm:grid-cols-2">
+  <img
+    src="/images/cedi-2fa-1.png"
+    alt="Instalación de Google Authenticator en la tienda de aplicaciones"
+    className="w-full rounded-lg border border-zinc-200 dark:border-zinc-700"
+  />
+  <img
+    src="/images/cedi-2fa-2.png"
+    alt="Inicio de sesión en Google en el dispositivo móvil"
+    className="w-full rounded-lg border border-zinc-200 dark:border-zinc-700"
+  />
+</div>
+
+Posteriormente, el usuario accede a la pantalla de inicio de sesión de Google, donde introduce su correo electrónico y selecciona **"Siguiente"**. El sistema valida la información y muestra el campo correspondiente para ingresar la contraseña.
+
+---
+
+Una vez que el usuario introduce su contraseña y selecciona **"Siguiente"**, el sistema verifica las credenciales y, en caso de tener activa la verificación en dos pasos, solicita una autenticación adicional.
+
+A continuación, se muestra la pantalla **"Mayor protección con Google Authenticator"**, donde el usuario selecciona **"Empezar"** para iniciar el proceso de configuración.
+
+El sistema despliega la pantalla principal de la aplicación, indicando que aún no hay ningún código configurado. El usuario selecciona **"Añadir código"**, momento en el cual se presentan dos opciones para agregar una nueva cuenta: introducir una clave manualmente o escanear un código QR.
+
+<div className="not-prose grid grid-cols-1 gap-4 sm:grid-cols-2">
+  <img
+    src="/images/cedi-2fa-3.png"
+    alt="Configuración de Google Authenticator: añadir código o escanear QR"
+    className="w-full rounded-lg border border-zinc-200 dark:border-zinc-700"
+  />
+  <img
+    src="/images/cedi-2fa-4.png"
+    alt="Códigos temporales generados en Google Authenticator"
+    className="w-full rounded-lg border border-zinc-200 dark:border-zinc-700"
+  />
+</div>
+
+En este flujo, el usuario selecciona la opción **"Escanear un código QR"**, lo que activa la cámara del dispositivo móvil. El usuario escanea el código QR mostrado en la computadora.
+
+El sistema registra la cuenta y comienza a generar códigos temporales de verificación. Estos códigos cambian automáticamente con el tiempo, por lo que es importante ingresar uno vigente antes de que expire. Generalmente, los códigos tienen una duración aproximada de 30 segundos.
+
+El usuario introduce el código temporal en el campo correspondiente dentro del sistema.
+
+---
+
+El sistema valida si el código ingresado es correcto y vigente:
+
+- Si el código es válido, el sistema registra exitosamente la creación del código 2FA y permite el acceso a las herramientas del sistema CEDI.
+- Si el código no es válido, el sistema rechaza la verificación y permite al usuario ingresar un nuevo código.
+
+<div className="not-prose flex justify-center">
+  <img
+    src="/images/cedi-2fa-5.png"
+    alt="Confirmación del código 2FA en el sistema CEDI"
+    className="w-full max-w-md rounded-lg border border-zinc-200 dark:border-zinc-700"
+  />
+</div>
+
+---
+
+A partir de este momento, el usuario puede acceder a los diferentes módulos del sistema y utilizar sus funcionalidades de manera segura.
+
+
+---

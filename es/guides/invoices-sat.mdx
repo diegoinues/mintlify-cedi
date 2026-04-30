@@ -1,0 +1,34 @@
+---
+title: SAT
+---
+
+Para obtener facturas directamente desde el **Servicio de Administración Tributaria (SAT)**, usted debe seleccionar la opción **"Obtener facturas del SAT"**. El sistema muestra un formulario donde se solicitan los datos necesarios para realizar la conexión segura con la plataforma del SAT.
+
+Los datos requeridos incluyen:
+
+- RFC
+- Llave privada (.key)
+- Certificado (.cer)
+- Contraseña del certificado
+
+El sistema informa que los archivos y credenciales proporcionados se utilizan únicamente para obtener las facturas correspondientes y que se eliminan automáticamente al finalizar el proceso, garantizando la seguridad de la información.
+
+Usted puede seleccionar las siguientes opciones adicionales según sus necesidades:
+
+- Guardar y registrar las facturas en el sistema
+- Enviar facturas por correo electrónico en formato CSV
+
+Si usted activa la opción de envío por correo electrónico, el sistema solicitará la siguiente información:
+
+- Nombre del destinatario
+- Correo electrónico
+
+Una vez completados los datos, usted debe seleccionar la opción **"Obtener facturas"** correspondiente al periodo deseado.
+
+El sistema se conecta al SAT, descarga las facturas correspondientes al periodo indicado y las registra automáticamente dentro del sistema.
+
+Finalmente, el sistema muestra un mensaje de confirmación indicando que las facturas fueron obtenidas correctamente y actualiza el listado de facturas registradas, permitiéndole visualizar las nuevas facturas dentro de la plataforma.
+
+***Importante: Nunca guardamos tus llaves privadas ni certificados. Estos se utilizan únicamente para obtener tus facturas del SAT y se eliminan inmediatamente después de la conexión.***
+
+![title](/images/cedi-facturas-sat.png)

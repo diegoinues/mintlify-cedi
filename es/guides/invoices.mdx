@@ -1,0 +1,91 @@
+---
+title: Facturas
+---
+
+
+Usted accede al módulo **"Facturas"** desde el sistema. Al ingresar, el sistema muestra la pantalla principal denominada **"Centro de Control Contable"**, donde se presenta un resumen general del estado de las facturas registradas.
+
+En esta sección, el sistema muestra indicadores clave que le permiten visualizar de forma rápida la situación actual de sus documentos, incluyendo:
+
+- Facturas pendientes
+- Facturas conciliadas
+
+De esta manera, usted puede identificar fácilmente la cantidad de facturas que requieren atención y aquellas que ya han sido conciliadas correctamente.
+
+---
+
+El sistema también presenta la sección **"Facturas Registradas"**, donde se muestra el listado completo de documentos disponibles. En este apartado, usted puede aplicar filtros para organizar la información según sus necesidades.
+
+Las facturas pueden filtrarse por los siguientes criterios:
+
+- Todas
+- Conciliadas
+- Pendientes
+- Sin movimiento
+
+Además, el sistema permite realizar búsquedas específicas ingresando alguno de los siguientes datos:
+
+- Número de factura
+- Emisor
+- RFC
+
+Una vez aplicados los filtros o criterios de búsqueda, el sistema muestra los resultados que coinciden con la información solicitada.
+
+El sistema presenta diferentes botones de acción que le permiten gestionar las facturas de manera eficiente. Estas acciones incluyen:
+
+- Subir factura
+- Subir estado de cuenta
+- Obtener facturas del SAT
+
+Usted puede seleccionar la opción que desee utilizar según la operación que necesite realizar.
+
+![title](/images/cedi-facturas.png)
+---
+
+### Subir factura
+
+Para registrar una nueva factura en el sistema, usted debe seleccionar la opción **"Subir factura"**. El sistema permite cargar un archivo de factura en formato **PDF**.
+
+Una vez que el archivo ha sido cargado, el sistema valida automáticamente su contenido para verificar que cumpla con los requisitos establecidos. Si la validación es exitosa, el sistema registra la factura y la agrega al listado de facturas registradas, permitiendo su consulta y gestión posterior.
+
+---
+
+### Subir estado de cuenta
+
+Si desea registrar un estado de cuenta, usted debe seleccionar la opción **"Subir estado de cuenta"**. El sistema permite cargar un archivo en formato **PDF**, el cual será procesado para validar la información contenida.
+
+Una vez validado el archivo, el sistema registra el estado de cuenta dentro del sistema, permitiendo su integración con el resto de la información financiera.
+
+---
+
+### Obtener facturas del SAT
+
+Para obtener facturas directamente desde el **Servicio de Administración Tributaria (SAT)**, usted debe seleccionar la opción **"Obtener facturas del SAT"**. El sistema muestra un formulario donde se solicitan los datos necesarios para realizar la conexión segura con la plataforma del SAT.
+
+Los datos requeridos incluyen:
+
+- RFC
+- Llave privada (.key)
+- Certificado (.cer)
+- Contraseña del certificado
+
+El sistema informa que los archivos y credenciales proporcionados se utilizan únicamente para obtener las facturas correspondientes y que se eliminan automáticamente al finalizar el proceso, garantizando la seguridad de la información.
+
+Usted puede seleccionar las siguientes opciones adicionales según sus necesidades:
+
+- Guardar y registrar las facturas en el sistema
+- Enviar facturas por correo electrónico en formato CSV
+
+Si usted activa la opción de envío por correo electrónico, el sistema solicitará la siguiente información:
+
+- Nombre del destinatario
+- Correo electrónico
+
+Una vez completados los datos, usted debe seleccionar la opción **"Obtener facturas"** correspondiente al periodo deseado.
+
+El sistema se conecta al SAT, descarga las facturas correspondientes al periodo indicado y las registra automáticamente dentro del sistema.
+
+Finalmente, el sistema muestra un mensaje de confirmación indicando que las facturas fueron obtenidas correctamente y actualiza el listado de facturas registradas, permitiéndole visualizar las nuevas facturas dentro de la plataforma.
+
+![title](/images/cedi-facturas-sat.png)
+

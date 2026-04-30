@@ -1,0 +1,279 @@
+{
+  "$schema": "https://mintlify.com/docs.json",
+  "name": "CEDI",
+  "logo": {
+    "light": "/images/cedi-logo-azul.png",
+    "dark": "/images/cedi-logo-azul.png"
+  },
+  "theme": "mint",
+  "colors": {
+    "primary": "#0ea5e9",
+    "light": "#D1D1D1",
+    "dark": "#181818"
+  },
+  "favicon": "/favicon.png",
+  "navigation": {
+    "languages": [
+      {
+        "language": "es",
+        "default": true,
+        "navbar": {
+          "links": [
+            {
+              "label": "English",
+              "href": "/en/intro"
+            }
+          ]
+        },
+        "tabs": [
+          {
+            "tab": "Guía",
+            "groups": [
+              {
+                "group": "Introducción",
+                "icon": "rocket",
+                "pages": [
+                  "es/intro"
+                ]
+              },
+              {
+                "group": "Creación de Usuarios",
+                "icon": "user-plus",
+                "pages": [
+                  "es/guides/user-registration-sign-in",
+                  "es/guides/business-onboarding-kyc",
+                  "es/guides/identity-verification",
+                  "es/guides/registration-flow-figma"
+                ]
+              },
+              {
+                "group": "Dashboard",
+                "icon": "home",
+                "pages": [
+                  "es/guides/post-login-dashboard",
+                  "es/guides/profile-and-2fa"
+                ]
+              },
+              {
+                "group": "Transacciones",
+                "icon": "repeat",
+                "pages": [
+                  "es/guides/transactions-overview",
+                  "es/guides/domestic-transfers",
+                  "es/guides/international-transfers"
+                ]
+              },
+              {
+                "group": "Dispersiones",
+                "icon": "wallet",
+                "pages": [
+                  "es/guides/disbursements"
+                ]
+              },
+              {
+                "group": "Facturas",
+                "icon": "receipt",
+                "pages": [
+                  "es/guides/invoices",
+                  "es/guides/invoices-sat"
+                ]
+              },
+              {
+                "group": "Soporte",
+                "icon": "headphones",
+                "pages": [
+                  "es/guides/support"
+                ]
+              },
+              {
+                "group": "Agente Financiero",
+                "icon": "brain",
+                "pages": [
+                  "es/guides/financial-assistant"
+                ]
+              },
+              {
+                "group": "Customization",
+                "pages": [
+                  "essentials/settings",
+                  "essentials/navigation"
+                ]
+              },
+              {
+                "group": "Writing content",
+                "pages": [
+                  "essentials/markdown",
+                  "essentials/code",
+                  "essentials/images",
+                  "essentials/reusable-snippets"
+                ]
+              },
+              {
+                "group": "AI tools",
+                "icon": "robot",
+                "pages": [
+                  "ai-tools/cursor",
+                  "ai-tools/claude-code",
+                  "ai-tools/windsurf"
+                ]
+              }
+            ]
+          },
+          {
+            "tab": "API reference",
+            "groups": [
+              {
+                "group": "API documentation",
+                "pages": [
+                  "api-reference/introduction"
+                ]
+              },
+              {
+                "group": "Endpoint examples",
+                "pages": [
+                  "api-reference/endpoint/get",
+                  "api-reference/endpoint/create",
+                  "api-reference/endpoint/delete",
+                  "api-reference/endpoint/webhook"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "language": "en",
+        "navbar": {
+          "links": [
+            {
+              "label": "Spanish",
+              "href": "/es/intro"
+            }
+          ]
+        },
+        "tabs": [
+          {
+            "tab": "Guides",
+            "groups": [
+              {
+                "group": "Introduction",
+                "icon": "rocket",
+                "pages": [
+                  "en/intro"
+                ]
+              },
+              {
+                "group": "User onboarding",
+                "icon": "user-plus",
+                "pages": [
+                  "en/guides/user-registration-sign-in",
+                  "en/guides/business-onboarding-kyc",
+                  "en/guides/identity-verification",
+                  "en/guides/registration-flow-figma"
+                ]
+              },
+              {
+                "group": "Dashboard",
+                "icon": "home",
+                "pages": [
+                  "en/guides/post-login-dashboard",
+                  "en/guides/profile-and-2fa"
+                ]
+              },
+              {
+                "group": "Transactions",
+                "icon": "repeat",
+                "pages": [
+                  "en/guides/transactions-overview",
+                  "en/guides/domestic-transfers",
+                  "en/guides/international-transfers"
+                ]
+              },
+              {
+                "group": "Disbursements",
+                "icon": "wallet",
+                "pages": [
+                  "en/guides/disbursements"
+                ]
+              },
+              {
+                "group": "Invoices",
+                "icon": "receipt",
+                "pages": [
+                  "en/guides/invoices",
+                  "en/guides/invoices-sat"
+                ]
+              },
+              {
+                "group": "Support",
+                "icon": "headphones",
+                "pages": [
+                  "en/guides/support"
+                ]
+              },
+              {
+                "group": "Financial agent",
+                "icon": "brain",
+                "pages": [
+                  "en/guides/financial-assistant"
+                ]
+              },
+              {
+                "group": "Customization",
+                "pages": [
+                  "essentials/settings",
+                  "essentials/navigation"
+                ]
+              },
+              {
+                "group": "Writing content",
+                "pages": [
+                  "essentials/markdown",
+                  "essentials/code",
+                  "essentials/images",
+                  "essentials/reusable-snippets"
+                ]
+              },
+              {
+                "group": "AI tools",
+                "icon": "robot",
+                "pages": [
+                  "ai-tools/cursor",
+                  "ai-tools/claude-code",
+                  "ai-tools/windsurf"
+                ]
+              }
+            ]
+          },
+          {
+            "tab": "API reference",
+            "groups": [
+              {
+                "group": "API documentation",
+                "pages": [
+                  "api-reference/introduction"
+                ]
+              },
+              {
+                "group": "Endpoint examples",
+                "pages": [
+                  "api-reference/endpoint/get",
+                  "api-reference/endpoint/create",
+                  "api-reference/endpoint/delete",
+                  "api-reference/endpoint/webhook"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "footer": {
+    "socials": {
+      "x": "https://x.com/mintlify",
+      "github": "https://github.com/mintlify",
+      "linkedin": "https://linkedin.com/company/mintlify"
+    }
+  }
+}

@@ -1,0 +1,100 @@
+---
+title: User Profile and 2FA Code
+---
+
+## User Profile
+
+The user accesses the **"User profile"** screen from the side menu, where the system displays the general information associated with their account.
+
+In the **"Profile"** section, the system presents the main user data, such as their email address, full name, and assigned team. From this section, the user can view their personal information and manage it by selecting the **"Change / Manage"** option, which allows them to manage and update the assigned teams as necessary.
+
+---
+
+In the **Security Settings** section, the system displays the **Two-Factor Authentication (2FA)** option. By selecting **"Configure 2FA"**, the user is redirected to the two-step authentication configuration flow, which is described in the following sections.
+
+---
+
+The system also presents the **Company Information** section, where the previously registered data is displayed, including the company name, RFC, full address, contact phone number, category, and corporate purpose. The user can consult this information at any time and scroll down to view all available data.
+
+![title](/images/cedi-informacion-usuarios.png)
+
+The user can return to any system module by selecting an option from the left side menu.
+
+---
+
+## Configuration and activation of the 2FA code
+
+To activate two-factor authentication, the system displays an informational window indicating that it is necessary to install an authenticator application, such as **Google Authenticator** or **Microsoft Authenticator**. For the purposes of this flow, **Google Authenticator** will be used as a reference.
+
+On the computer, the system presents the necessary elements to complete the configuration:
+
+- QR code
+- Setup key
+- Field to enter a temporary code
+
+The temporary code will be obtained after completing the following steps.
+
+The user must access the **App Store** or **Play Store**, depending on the operating system of their mobile device (iOS or Android), search for the **Google Authenticator** application, install it, and open it.
+
+<div className="not-prose grid grid-cols-1 gap-4 sm:grid-cols-2">
+  <img
+    src="/images/cedi-2fa-1.png"
+    alt="Installation of Google Authenticator in the application store"
+    className="w-full rounded-lg border border-zinc-200 dark:border-zinc-700"
+  />
+  <img
+    src="/images/cedi-2fa-2.png"
+    alt="Google sign-in on the mobile device"
+    className="w-full rounded-lg border border-zinc-200 dark:border-zinc-700"
+  />
+</div>
+
+Subsequently, the user accesses the Google sign-in screen, where they enter their email address and select **"Next"**. The system validates the information and displays the corresponding field to enter the password.
+
+---
+
+Once the user enters their password and selects **"Next"**, the system verifies the credentials and, if two-step verification is active, requests additional authentication.
+
+Next, the **"Stronger protection with Google Authenticator"** screen is displayed, where the user selects **"Get started"** to begin the configuration process.
+
+The system displays the main application screen, indicating that no code has yet been configured. The user selects **"Add code"**, at which point two options are presented to add a new account: enter a key manually or scan a QR code.
+
+<div className="not-prose grid grid-cols-1 gap-4 sm:grid-cols-2">
+  <img
+    src="/images/cedi-2fa-3.png"
+    alt="Google Authenticator setup: add code or scan QR"
+    className="w-full rounded-lg border border-zinc-200 dark:border-zinc-700"
+  />
+  <img
+    src="/images/cedi-2fa-4.png"
+    alt="Temporary codes generated in Google Authenticator"
+    className="w-full rounded-lg border border-zinc-200 dark:border-zinc-700"
+  />
+</div>
+
+In this flow, the user selects the **"Scan a QR code"** option, which activates the mobile device camera. The user scans the QR code displayed on the computer.
+
+The system registers the account and begins generating temporary verification codes. These codes change automatically over time, so it is important to enter a valid one before it expires. Generally, the codes have an approximate duration of 30 seconds.
+
+The user enters the temporary code in the corresponding field within the system.
+
+---
+
+The system validates whether the entered code is correct and valid:
+
+- If the code is valid, the system successfully registers the creation of the 2FA code and allows access to the tools of the CEDI system.
+- If the code is not valid, the system rejects the verification and allows the user to enter a new code.
+
+<div className="not-prose flex justify-center">
+  <img
+    src="/images/cedi-2fa-5.png"
+    alt="Confirmation of the 2FA code in the CEDI system"
+    className="w-full max-w-md rounded-lg border border-zinc-200 dark:border-zinc-700"
+  />
+</div>
+
+---
+
+From this moment on, the user can access the different system modules and use their functionalities securely.
+
+---
